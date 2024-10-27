@@ -1,0 +1,28 @@
+.container .header {
+  background-color: rgb(66, 189, 64);
+  height: 200px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.container .header .products {
+  display: flex-end;
+  list-style: none;
+  padding: 20px;
+}
+.container .header .products ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.container .header .products ul li {
+  display: inline;
+  margin-right: 10px;
+}
+.container .header .products ul li a {
+  text-decoration: none;
+  color: rgb(17, 41, 220);
+}
+.container .header .products ul li a:hover {
+  color: green;
+}/*# sourceMappingURL=day4.css.map */
