@@ -83,32 +83,50 @@
 // 3.document.getElementsByName
 
 
-function fnValidateSignupForm(){
-    let fname=document.getElementById("firstname").value;
-    let lname=document.getElementById("lastname").value;
-    let email=document.getElementById("email").value;
-    let password=document.getElementById("password").value;
-    let confirmPassword=document.getElementById("Confirmpassword").value;
-    console.log(fname,lname,email,password,confirmPassword);
+// changing in th form in day 2js
 
-    let validateFname=fname.length>4?true:false;
-    let validateLname=lname.length>4?true:false;
-    if(validateFname && validateLname){
-        console.log("sucess");
-    }else{
-        console.log("Failure");
+function fnValidateSignupForm(e){
+    e.preventDefault();
+    let formData=e.target;
+    let fname=formData.fname.value;
+    let lname=formData.lname.value;
+    let email=formData.email.value;
+    let password=formData.password.value;
+    let confirmpassword=formData.confirmpassword.value;
+    console.log(fname)
+    // console.log(fname);
+    // let confirmpassword=formData.confirmpassword;
+    // console.log(formData.confirmpassword.value);
+    
+    
+    
+}
+    
+//     let fname=document.getElementById("firstname").value;
+//     let lname=document.getElementById("lastname").value;
+//     let email=document.getElementById("email").value;
+//     let password=document.getElementById("password").value;
+//     let confirmPassword=document.getElementById("Confirmpassword").value;
+//     console.log(fname,lname,email,password,confirmPassword);
+
+//     let validateFname=fname.length>4?true:false;
+//     let validateLname=lname.length>4?true:false;
+//     if(validateFname && validateLname){
+//         console.log("sucess");
+//     }else{
+//         console.log("Failure");
         
-    }
+//     }
 
-}
-
-function validateFname(inputValue){
-// if(inputValue.length>=5){
-//     return "valid";
-// }    else{
-//     return "Invalid";    
 // }
-}
+
+// function validateFname(inputValue){
+// // if(inputValue.length>=5){
+// //     return "valid";
+// // }    else{
+// //     return "Invalid";    
+// // }
+// }
 
 
 // interview questions
